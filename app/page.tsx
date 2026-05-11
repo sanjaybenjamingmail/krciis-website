@@ -84,6 +84,7 @@ export default function Home() {
       <a href="/solutions" className="hover:text-cyan-400 transition">Solutions</a>
       <a href="/dubs-ai-studio" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
       <a href="/case-studies" className="hover:text-cyan-400 transition">Case Studies</a>
+      <a href="/blog" className="hover:text-cyan-400 transition">Blog</a>
       <a href="/contact" className="hover:text-cyan-400 transition">Contact</a>
     </nav>
 
@@ -137,6 +138,10 @@ export default function Home() {
 
         <a href="/case-studies" onClick={() => setMobileMenuOpen(false)}>
           Case Studies
+        </a>
+
+        <a href="/blog" onClick={() => setMobileMenuOpen(false)}>
+          Blog
         </a>
 
         <a href="#contact" onClick={() => setMobileMenuOpen(false)}>

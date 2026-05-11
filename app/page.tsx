@@ -143,44 +143,44 @@ export default function Home() {
 
       <div className="flex flex-col gap-6 text-lg text-slate-300">
 
-        <a href="#home" onClick={() => setMobileMenuOpen(false)}>
-          Home
-        </a>
+        <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+  Home
+</Link>
 
-        <a href="/about" onClick={() => setMobileMenuOpen(false)}>
-          About
-        </a>
+<Link href="/about" onClick={() => setMobileMenuOpen(false)}>
+  About
+</Link>
 
-        <a href="/services" onClick={() => setMobileMenuOpen(false)}>
-          Services
-        </a>
+<Link href="/services" onClick={() => setMobileMenuOpen(false)}>
+  Services
+</Link>
 
-        <a href="/solutions" onClick={() => setMobileMenuOpen(false)}>
-          Solutions
-        </a>
+<Link href="/solutions" onClick={() => setMobileMenuOpen(false)}>
+  Solutions
+</Link>
 
-        <a href="/dubs-ai-studio" onClick={() => setMobileMenuOpen(false)}>
-          Dubs AI Studio
-        </a>
+<Link href="/dubs-ai-studio" onClick={() => setMobileMenuOpen(false)}>
+  Dubs AI Studio
+</Link>
 
-        <a href="/case-studies" onClick={() => setMobileMenuOpen(false)}>
-          Case Studies
-        </a>
+<Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>
+  Case Studies
+</Link>
 
-        <a href="/blog" onClick={() => setMobileMenuOpen(false)}>
-          Blog
-        </a>
+<Link href="/blog" onClick={() => setMobileMenuOpen(false)}>
+  Blog
+</Link>
 
-        <a href="#contact" onClick={() => setMobileMenuOpen(false)}>
-          Contact
-        </a>
+<Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+  Contact
+</Link>
 
-        <a
-          href="#contact"
-          className="bg-cyan-500 text-slate-950 px-5 py-3 rounded-xl font-semibold text-center"
-        >
-          Get Started
-        </a>
+        <Link
+  href="/contact"
+  className="bg-cyan-500 text-slate-950 px-5 py-3 rounded-xl font-semibold text-center"
+>
+  Get Started
+</Link>
 
       </div>
 
@@ -762,6 +762,14 @@ export default function Home() {
         height={70}
         className="object-contain mb-6"
       />
+
+      <p className="text-slate-500 text-sm mt-4 leading-relaxed">
+        KRCIIS is the enterprise technology brand of
+        <span className="text-slate-300">
+        {" "}
+        Keynote & Rainbow Covenant International IT Solutions Limited
+        </span>
+        </p>
 
       <p className="text-slate-400 leading-relaxed">
         Enterprise AI, cloud infrastructure, cybersecurity,

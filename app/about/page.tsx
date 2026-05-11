@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -19,12 +20,16 @@ export default function AboutPage() {
             Enterprise AI, Innovation & Digital Transformation
           </h1>
 
-          <p className="text-slate-400 text-xl leading-relaxed max-w-4xl">
-            KRCIIS is a next-generation enterprise technology company focused
-            on AI innovation, cybersecurity, cloud infrastructure, enterprise
-            integration, creator economy platforms, and digital transformation
-            for governments, enterprises, and future digital ecosystems.
-          </p>
+<p className="text-slate-400 text-xl leading-relaxed max-w-4xl">
+  <span className="text-white font-semibold">
+    KRCIIS (Keynote & Rainbow Covenant International IT Solutions Limited)
+  </span>{" "}
+  is a next-generation enterprise technology company focused
+  on AI innovation, cybersecurity, cloud infrastructure,
+  enterprise integration, creator economy platforms,
+  and digital transformation for governments,
+  enterprises, and future digital ecosystems.
+</p>
 
         </div>
 
@@ -202,12 +207,12 @@ export default function AboutPage() {
             and intelligent digital transformation.
           </p>
 
-          <a
-            href="/contact"
-            className="inline-flex bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-xl font-bold text-slate-950"
-          >
-            Contact Us
-          </a>
+<Link
+  href="/contact"
+  className="inline-flex bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-xl font-bold text-slate-950"
+>
+  Contact Us
+</Link>
 
         </div>
 

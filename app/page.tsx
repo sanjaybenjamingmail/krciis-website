@@ -5,6 +5,7 @@ import { loadSlim } from "tsparticles-slim";
 import { useState } from "react";
 import CountUp from "react-countup";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -66,27 +67,53 @@ export default function Home() {
 
     {/* LOGO */}
     <div className="flex items-center gap-3">
-      <Image
-        src="/logo.png"
-        alt="KRCIIS Logo"
-        width={180}
-        height={60}
-        priority
-        className="object-contain"
-      />
+    <Image
+      src="/logo.png"
+      alt="KRCIIS Logo"
+      width={150}
+      height={50}
+      priority
+      className="object-contain w-[140px] md:w-[160px] lg:w-[180px]"
+    />
     </div>
 
     {/* DESKTOP MENU */}
-    <nav className="hidden md:flex items-center gap-8 text-slate-300">
-      <a href="#home" className="hover:text-cyan-400 transition">Home</a>
-      <a href="/about" className="hover:text-cyan-400 transition">About</a>
-      <a href="/services" className="hover:text-cyan-400 transition">Services</a>
-      <a href="/solutions" className="hover:text-cyan-400 transition">Solutions</a>
-      <a href="/dubs-ai-studio" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
-      <a href="/case-studies" className="hover:text-cyan-400 transition">Case Studies</a>
-      <a href="/blog" className="hover:text-cyan-400 transition">Blog</a>
-      <a href="/contact" className="hover:text-cyan-400 transition">Contact</a>
-    </nav>
+{/* DESKTOP MENU */}
+<nav className="hidden xl:flex items-center gap-6 text-slate-300 text-sm">
+
+  <Link href="/" className="hover:text-cyan-400 transition">
+    Home
+  </Link>
+
+  <Link href="/about" className="hover:text-cyan-400 transition">
+    About
+  </Link>
+
+  <Link href="/services" className="hover:text-cyan-400 transition">
+    Services
+  </Link>
+
+  <Link href="/solutions" className="hover:text-cyan-400 transition">
+    Solutions
+  </Link>
+
+  <Link href="/dubs-ai-studio" className="hover:text-cyan-400 transition">
+    Dubs AI Studio
+  </Link>
+
+  <Link href="/case-studies" className="hover:text-cyan-400 transition">
+    Case Studies
+  </Link>
+
+  <Link href="/blog" className="hover:text-cyan-400 transition">
+    Blog
+  </Link>
+
+  <Link href="/contact" className="hover:text-cyan-400 transition">
+    Contact
+  </Link>
+
+</nav>
 
     {/* DESKTOP BUTTON */}
     <a
@@ -111,7 +138,7 @@ export default function Home() {
     <motion.div
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="md:hidden border-t border-slate-800 bg-slate-950 px-6 py-8"
+      className="md:hidden border-t border-slate-800 bg-slate-950 px-6 py-8 max-h-[80vh] overflow-y-auto"
     >
 
       <div className="flex flex-col gap-6 text-lg text-slate-300">
@@ -165,7 +192,7 @@ export default function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="min-h-screen flex items-center relative px-6 lg:px-20 pt-32"
+        className="min-h-screen flex items-center relative px-6 lg:px-20 pt-24 md:pt-32 pb-16"
       >
         <Particles
   id="tsparticles"
@@ -176,7 +203,7 @@ export default function Home() {
     background: {
       color: "transparent",
     },
-    fpsLimit: 60,
+    fpsLimit: 40,
     particles: {
       color: {
         value: "#06b6d4",
@@ -193,7 +220,7 @@ export default function Home() {
         speed: 1,
       },
       number: {
-        value: 50,
+        value: 30,
       },
       opacity: {
         value: 0.2,
@@ -221,7 +248,7 @@ export default function Home() {
               AI • Innovation • Enterprise Transformation
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8">
               Transforming Enterprises Through AI Innovation
             </h1>
 
@@ -231,9 +258,9 @@ export default function Home() {
               for governments, businesses, and future digital leaders.
             </p>
 
-            <div className="flex flex-wrap gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
               <a
-                href="#services"
+                href="/services"
                 className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 transition px-8 py-4 rounded-xl font-semibold text-slate-950"
               >
                 Explore Services <ArrowRight size={18} />
@@ -254,7 +281,7 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/10 border border-slate-800 rounded-[40px] p-10 backdrop-blur-xl">
+            <div className="bg-gradient-to-br from-cyan-500/20 to-blue-500/10 border border-slate-800 rounded-3xl md:rounded-[40px] p-10 backdrop-blur-xl">
 
               <div className="grid grid-cols-2 gap-5">
 
@@ -391,7 +418,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Our Services
             </h2>
 
@@ -451,7 +478,7 @@ export default function Home() {
       </p>
     </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
 
       {[
         ["IBM Power10", "Mission-critical enterprise computing"],
@@ -724,7 +751,7 @@ export default function Home() {
       {/* FOOTER */}
 <footer className="border-t border-slate-800 px-6 lg:px-20 py-20 bg-slate-950">
 
-  <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+  <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
     {/* BRAND */}
     <div>

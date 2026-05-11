@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -51,11 +52,15 @@ export default function Home() {
       {/* NAVBAR */}
       <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/70 border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-
-          <div>
-            <h1 className="text-2xl font-black tracking-tight">
-              KRCIIS
-            </h1>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/logo.png"
+              alt="KRCIIS Logo"
+              width={200}
+              height={70}
+              priority
+              className="object-contain"
+              />
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-slate-300">

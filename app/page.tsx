@@ -80,8 +80,8 @@ export default function Home() {
     <nav className="hidden md:flex items-center gap-8 text-slate-300">
       <a href="#home" className="hover:text-cyan-400 transition">Home</a>
       <a href="/services" className="hover:text-cyan-400 transition">Services</a>
-      <a href="#solutions" className="hover:text-cyan-400 transition">Solutions</a>
-      <a href="#dubs" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
+      <a href="/solutions" className="hover:text-cyan-400 transition">Solutions</a>
+      <a href="/dubs-ai-studio" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
       <a href="/contact" className="hover:text-cyan-400 transition">Contact</a>
     </nav>
 
@@ -117,15 +117,15 @@ export default function Home() {
           Home
         </a>
 
-        <a href="#services" onClick={() => setMobileMenuOpen(false)}>
+        <a href="/services" onClick={() => setMobileMenuOpen(false)}>
           Services
         </a>
 
-        <a href="#solutions" onClick={() => setMobileMenuOpen(false)}>
+        <a href="/solutions" onClick={() => setMobileMenuOpen(false)}>
           Solutions
         </a>
 
-        <a href="#dubs" onClick={() => setMobileMenuOpen(false)}>
+        <a href="/dubs-ai-studio" onClick={() => setMobileMenuOpen(false)}>
           Dubs AI Studio
         </a>
 

@@ -139,20 +139,25 @@ export default function Home() {
 
               <div className="grid grid-cols-2 gap-5">
 
-                {["AI Solutions", "Cloud", "Cybersecurity", "Data Platforms"].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center"
+                {[
+                  ["AI Solutions", "Generative AI & Automation"],
+                  ["Cloud", "Hybrid Infrastructure"],
+                  ["Cybersecurity", "Threat Protection"],
+                  ["Data Platforms", "Analytics & Intelligence"],
+                ].map(([title, subtitle], i) => (
+                <div
+                  key={i}
+                  className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center"
                   >
-                    <div className="text-cyan-400 text-lg font-bold mb-3">
-                      {item}
-                    </div>
+                <div className="text-cyan-400 text-lg font-bold mb-3">
+                {title}
+                </div>
 
-                    <div className="text-slate-400 text-sm">
-                      Enterprise Technology
-                    </div>
-                  </div>
-                ))}
+                <div className="text-slate-400 text-sm">
+                {subtitle}
+                </div>
+                </div>
+              ))}
               </div>
             </div>
           </motion.div>

@@ -535,30 +535,134 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section
-        id="contact"
-        className="px-6 lg:px-20 py-28 border-t border-slate-800"
-      >
-        <div className="max-w-4xl mx-auto text-center">
+{/* CONTACT */}
+<section
+  id="contact"
+  className="px-6 lg:px-20 py-28 border-t border-slate-800"
+>
 
-          <h2 className="text-5xl font-bold mb-8">
-            Let's Build The Future Together
-          </h2>
+  <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
-          <p className="text-slate-400 text-lg mb-12">
-            Partner with KRCIIS for AI innovation, digital transformation,
-            enterprise technology, and creator economy solutions.
-          </p>
+    {/* LEFT */}
+    <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
 
-          <a
-            href="mailto:info@krciis.com"
-            className="inline-flex items-center gap-2 bg-white text-slate-950 hover:bg-slate-200 transition px-8 py-4 rounded-xl font-semibold"
-          >
-            Contact Us <ArrowRight size={18} />
-          </a>
+      <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/20 px-4 py-2 rounded-full text-sm text-cyan-300 mb-6">
+        Contact KRCIIS
+      </div>
+
+      <h2 className="text-5xl font-bold mb-8 leading-tight">
+        Let’s Build The Future Together
+      </h2>
+
+      <p className="text-slate-400 text-lg leading-relaxed mb-10">
+        Partner with KRCIIS for enterprise AI solutions,
+        cloud infrastructure, cybersecurity, digital transformation,
+        and intelligent innovation platforms.
+      </p>
+
+      <div className="space-y-6">
+
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="text-cyan-400 font-bold mb-2">
+            Email
+          </div>
+
+          <div className="text-slate-300">
+            info@krciis.com
+          </div>
         </div>
-      </section>
+
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="text-cyan-400 font-bold mb-2">
+            Location
+          </div>
+
+          <div className="text-slate-300">
+            Kampala, Uganda
+          </div>
+        </div>
+
+      </div>
+
+    </motion.div>
+
+    {/* RIGHT */}
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
+
+      <form className="bg-slate-900 border border-slate-800 rounded-[40px] p-10 space-y-6">
+
+        <div>
+          <label className="block text-slate-300 mb-3">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            placeholder="Enter your name"
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white outline-none focus:border-cyan-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-slate-300 mb-3">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white outline-none focus:border-cyan-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-slate-300 mb-3">
+            Company
+          </label>
+
+          <input
+            type="text"
+            placeholder="Your company"
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white outline-none focus:border-cyan-500"
+          />
+        </div>
+
+        <div>
+          <label className="block text-slate-300 mb-3">
+            Message
+          </label>
+
+          <textarea
+            rows={5}
+            placeholder="Tell us about your project"
+            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white outline-none focus:border-cyan-500"
+          />
+        </div>
+
+        <button
+          type="submit"
+          className="w-full bg-cyan-500 hover:bg-cyan-400 transition text-slate-950 font-bold py-4 rounded-xl"
+        >
+          Send Inquiry
+        </button>
+
+      </form>
+
+    </motion.div>
+
+  </div>
+
+</section>
 
       {/* FOOTER */}
 <footer className="border-t border-slate-800 px-6 lg:px-20 py-20 bg-slate-950">

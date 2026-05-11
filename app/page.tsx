@@ -79,9 +79,11 @@ export default function Home() {
     {/* DESKTOP MENU */}
     <nav className="hidden md:flex items-center gap-8 text-slate-300">
       <a href="#home" className="hover:text-cyan-400 transition">Home</a>
+      <a href="/about" className="hover:text-cyan-400 transition">About</a>
       <a href="/services" className="hover:text-cyan-400 transition">Services</a>
       <a href="/solutions" className="hover:text-cyan-400 transition">Solutions</a>
       <a href="/dubs-ai-studio" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
+      <a href="/case-studies" className="hover:text-cyan-400 transition">Case Studies</a>
       <a href="/contact" className="hover:text-cyan-400 transition">Contact</a>
     </nav>
 
@@ -117,6 +119,10 @@ export default function Home() {
           Home
         </a>
 
+        <a href="/about" onClick={() => setMobileMenuOpen(false)}>
+          About
+        </a>
+
         <a href="/services" onClick={() => setMobileMenuOpen(false)}>
           Services
         </a>
@@ -127,6 +133,10 @@ export default function Home() {
 
         <a href="/dubs-ai-studio" onClick={() => setMobileMenuOpen(false)}>
           Dubs AI Studio
+        </a>
+
+        <a href="/case-studies" onClick={() => setMobileMenuOpen(false)}>
+          Case Studies
         </a>
 
         <a href="#contact" onClick={() => setMobileMenuOpen(false)}>

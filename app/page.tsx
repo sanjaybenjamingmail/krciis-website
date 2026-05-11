@@ -1,5 +1,7 @@
 "use client";
 
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 import { useState } from "react";
 import CountUp from "react-countup";
 import Image from "next/image";
@@ -51,6 +53,9 @@ const services = [
 
 export default function Home() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+      const particlesInit = async (engine: any) => {
+    await loadSlim(engine);
+  };
   return (
     <main className="bg-slate-950 text-white overflow-hidden min-h-screen">
 
@@ -74,10 +79,10 @@ export default function Home() {
     {/* DESKTOP MENU */}
     <nav className="hidden md:flex items-center gap-8 text-slate-300">
       <a href="#home" className="hover:text-cyan-400 transition">Home</a>
-      <a href="#services" className="hover:text-cyan-400 transition">Services</a>
+      <a href="/services" className="hover:text-cyan-400 transition">Services</a>
       <a href="#solutions" className="hover:text-cyan-400 transition">Solutions</a>
       <a href="#dubs" className="hover:text-cyan-400 transition">Dubs AI Studio</a>
-      <a href="#contact" className="hover:text-cyan-400 transition">Contact</a>
+      <a href="/contact" className="hover:text-cyan-400 transition">Contact</a>
     </nav>
 
     {/* DESKTOP BUTTON */}
@@ -147,6 +152,43 @@ export default function Home() {
         id="home"
         className="min-h-screen flex items-center relative px-6 lg:px-20 pt-32"
       >
+        <Particles
+  id="tsparticles"
+  init={particlesInit}
+  className="absolute inset-0 z-0"
+  options={{
+    fullScreen: false,
+    background: {
+      color: "transparent",
+    },
+    fpsLimit: 60,
+    particles: {
+      color: {
+        value: "#06b6d4",
+      },
+      links: {
+        color: "#06b6d4",
+        distance: 150,
+        enable: true,
+        opacity: 0.15,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+      },
+      number: {
+        value: 50,
+      },
+      opacity: {
+        value: 0.2,
+      },
+      size: {
+        value: 2,
+      },
+    },
+  }}
+/>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(6,182,212,0.18),transparent_40%)]" />
         <div className="absolute top-40 left-20 w-72 h-72 bg-cyan-500/20 blur-[120px] rounded-full" />

@@ -252,6 +252,51 @@ export default function Home() {
               Empowering Africa Through AI Innovation & Digital Transformation
             </h1>
 
+      <section class="ai-africa-section">
+
+            <div class="container">
+
+            <h2>Driving Africa’s AI Future</h2>
+
+            <p>
+            KRCIIS and Dubs AI Studio are committed to advancing Africa’s AI transformation through AI education, creator economy innovation, enterprise AI solutions, digital workforce development, and responsible AI adoption.
+            </p>
+
+            <div class="ai-grid">
+
+            <div class="card">
+            <h3>AI Workforce Development</h3>
+            <p>
+            Training Africa’s next generation of AI creators, innovators, and entrepreneurs.
+            </p>
+            </div>
+
+            <div class="card">
+            <h3>African Language AI</h3>
+            <p>
+            Building multilingual AI content systems for African communities and businesses.
+            </p>
+            </div>
+
+            <div class="card">
+            <h3>Enterprise AI Transformation</h3>
+            <p>
+            Supporting governments and enterprises with scalable AI innovation and automation.
+            </p>
+            </div>
+
+            <div class="card">
+            <h3>Responsible AI</h3>
+            <p>
+            Promoting ethical, secure, and trustworthy AI adoption across Africa.
+            </p>
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>
             <p className="text-slate-300 text-xl leading-relaxed mb-10 max-w-2xl">
               KRCIIS delivers enterprise AI solutions, cloud infrastructure,
               cybersecurity, digital transformation, and creator economy innovation

@@ -28,3 +28,40 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.ai-africa-section {
+  padding: 80px 20px;
+  background: #0f172a;
+  color: white;
+}
+
+.ai-africa-section h2 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ai-africa-section p {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}

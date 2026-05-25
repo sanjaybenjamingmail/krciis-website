@@ -249,7 +249,7 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-8">
-              Transforming Enterprises Through AI Innovation
+              Empowering Africa Through AI Innovation & Digital Transformation
             </h1>
 
             <p className="text-slate-300 text-xl leading-relaxed mb-10 max-w-2xl">
